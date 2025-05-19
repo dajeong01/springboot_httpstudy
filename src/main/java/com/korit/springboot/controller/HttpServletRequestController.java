@@ -27,6 +27,20 @@ public class HttpServletRequestController {
         return "제다정";
     }   // 요즘 방식
 
+//    @GetMapping("/api/count")
+//    public String getCount(@RequestParam(required = false) int a){
+//        System.out.println(a);
+//        int count = 0;
+//        if(a > 0){
+//            count += a;
+//            System.out.println(count);
+//        } else {
+//            System.out.println("count가 음수입니다.");
+//        }
+//        return "카운트페이지";
+//    } // 이거 안됨 일회용임 백엔드
+
+
 //    @GetMapping("/api/name2")
 //    public String getName2(@RequestParam(required = false, value = "address") String a){
 //        System.out.println(a);
