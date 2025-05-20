@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 /*
     HttpServletRequest 객체란?
     외부에서 tomcat 웹 서버로 요청시 생성되는 요청정보객체이다.
-
  */
 @RestController
 public class HttpServletRequestController {
@@ -46,5 +45,4 @@ public class HttpServletRequestController {
 //        System.out.println(a);
 //        return "제다정";
 //    }   // 요즘 방식
-
 }

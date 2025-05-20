@@ -3,6 +3,7 @@ package com.korit.springboot.controller;
 // 요청 URL : /api/age, 응답 데이터 : {name: 김준일, age: 32}
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
