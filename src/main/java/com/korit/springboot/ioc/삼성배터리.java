@@ -3,7 +3,7 @@ package com.korit.springboot.ioc;
 import org.springframework.stereotype.Component;
 
 @Component
-public class 삼성배터리 implements 배터리{
+public class 삼성배터리 implements 배터리 {
 
     @Override
     public void 전류공급() {

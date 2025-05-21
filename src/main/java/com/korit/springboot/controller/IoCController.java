@@ -5,19 +5,21 @@ import com.korit.springboot.ioc.삼성배터리;
 import com.korit.springboot.ioc.스마트폰;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
+@AllArgsConstructor
 public class IoCController {
 
 //    배터리 b = new 삼성배터리();
 //    스마트폰 s = new 스마트폰(b);
 
-    @Autowired
     private 스마트폰 s;
+    private BeanStudy beanStudy;
 
     @GetMapping("/ioc")
     public String get(){
