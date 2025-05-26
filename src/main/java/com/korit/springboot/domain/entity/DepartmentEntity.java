@@ -1,24 +1,24 @@
-package com.korit.springboot.domain.department;
+package com.korit.springboot.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "department_tb")
-public class Department {
+public class DepartmentEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "department_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String departmentName;
-
 }
